@@ -257,12 +257,12 @@ a.logo:hover
 }
 .service-main-content
 {
-	padding: 20px 20px 0px;
+	padding: 20px 10px 0px;
 	font-size: 16px;
 }
-.service-main-content:nth-child(2)
+.service-main-content:nth-child(6)
 {
-	padding-bottom: 80px;
+	padding-bottom: 20px;
 }
 #service .wrapper .service-content .container .service-table
 {
@@ -443,6 +443,35 @@ button.active, button.filters-button:hover, button.filters-button:active, button
 {
 	color: #e64e4e;
 	border: 1px solid #e64e4e;
+}
+
+button.filters-button2:first-child
+{
+	margin-left: 25px;
+}
+button.filters-button2
+{
+	text-transform: capitalize;
+	background: transparent;
+	color: rgb(0, 0, 0);
+	border: 1px solid #221e2d;
+	outline: none;
+	margin: 25px 0px 50px;
+	padding: 5px 20px;
+	font-size: 16px;
+	font-family: 'Roboto', 'helvetica', sans-serif;
+}
+button.active, button.filters-button2:hover, button.filters-button2:active, button.filters-button2:focus
+{
+	color: #7fd1eb;
+	border: 1px solid #7fd1eb;
+}
+.works .wrapper
+{
+	padding-bottom: 0px;
+}
+.nivo-lightbox-theme-default.nivo-lightbox-overlay {
+    background-color: rgba(230, 77, 105, 0.85);
 }
 .works .wrapper
 {
