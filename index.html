@@ -16,7 +16,16 @@
     <link rel="stylesheet" href="nivo-lightbox/nivo-lightbox.css">
     <link rel="stylesheet" href="nivo-lightbox/nivo-lightbox-theme.css">
     <link rel="stylesheet" href="css/main.css">
-
+    <script>
+        function myFunction(name){
+	       var x = document.getElementbyId(name);
+	       if(x.style.display == "none"){
+	          x.style.display = block;
+	        }else{
+	          x.style.display = "none";
+		    }
+		}
+    </script>
   </head>
   <body>
 
@@ -34,7 +43,7 @@
                       <li role="presentation"><a href="#about">about</a></li>
                         <li role="presentation"><a href="#service">service</a></li>
                       <li role="presentation"><a href="#features">features</a></li>
-                      <li role="presentation"><a href="#current">history</a></li>
+                      <li role="presentation"><a href="#history">history</a></li>
                       <li role="presentation"><a href="#future">future</a></li>
                       <li role="presentation"><a href="#contact">contact</a></li>
                     </ul>
@@ -63,7 +72,7 @@
         </section> <!-- /#header -->
 
 
-    <!--== 5. About Us ==-->
+    <!--== 5. About PayPal ==-->
 
     <section id="about" class="about">
         <div class="container-fluid">
@@ -72,13 +81,13 @@
                     <div class="col-md-4 col-sm-12 about-table-cell">
                         <div class="about-content">
                             <div class="wrapper2">
-                                <h2 class="section-title2 wow bounceInRight animated">paypal</h2>
+                                <h2 class="section-title2 wow bounceInRight animated">PayPal</h2>
                           <!--      <h4 class="subtitle wow bounceInRight animated">• Introduction</h4>-->
                                 <p class="section-paragraph wow pulse animated">
-                                    PayPal, known as PayPal Holdings Inc. is an American company operating a worldwide online payments system that supports online money transfers and serves as an electronic alternative to traditional paper methods like checks and money orders(Wikipedia).
+                                    PayPal, known as PayPal Holdings Inc. is an American company operating a worldwide on-line payments system that supports on-line money transfers and serves as an electronic alternative to traditional paper methods like checks and money orders(Wikipedia).
                                 </p>
                                 <p class="section-paragraph wow pulse animated"> 
-                                    It is also one of the world's largest Internet payment companies that enable online business and auction sites, offers a paperless payment processor, charges small fees to operate.
+                                    It is also one of the world's largest Internet payment companies that enable on-line business and auction sites, offers a paperless payment processor, charges small fees to operate.
                                 </p> <!-- /.section-paragraph -->
                             </div> <!-- /.wrapper -->
                         </div> <!-- /.about-content -->
@@ -90,7 +99,7 @@
         </div> <!-- /.container-fluid -->
     </section> <!-- /#about -->
 
-    <!--== 5. Offered Services ==-->
+    <!--== 6. Offered Services ==-->
 
         <section class="service" id="service">
             <div class="wrapper">
@@ -104,7 +113,7 @@
                                 <div class="container border-2">
                                     <div class="row">
                                         <div class="col-sm-5 border-1">
-                                            <h4 class="subtitle custom-purple wow bounceInLeft center animated">Interested in paypal services?</h4>
+                                            <h4 class="subtitle custom-purple wow bounceInLeft center animated">Interested in PayPal services?</h4>
                                         </div>
                                         <div class="col-sm-7"></div>
                                     </div> <!-- /.row -->
@@ -171,7 +180,7 @@
                                                     <div class="add wow bounceInRight animated" data-wow-delay="0.2s">
                                                         <i class="fa fa-bullseye"></i>
                                                         <p>
-                                                            Windows
+                                                            PC
                                                         </p>
                                                     </div>
                                                 </a>
@@ -200,29 +209,86 @@
             </div> <!-- /.wrapper -->
         </section> <!-- /#service -->
 
-    <!--== 7. paypal history ==-->
+    <!--== 7. PayPal features ==-->
 
     <section id="features" class="about">
             <div class="container-fluid">
                 <div class="row">
                     <div class="about-table">
-                        <div class="col-md-4 col-sm-12 about-table-cell">
+                        <div class="col-md-6 col-sm-12 about-table-cell">
                             <div class="about-content">
                                 <div class="wrapper">
                                     <h2 class="section-title wow bounceInRight animated">Features</h2>
                                     <p class="section-paragraph wow pulse animated">
-                                        ▷ Features
-                                    </p> <!-- /.section-paragraph -->
-                                    <p class="section-paragraph wow pulse animated">
-                                        ▷ Advantages
-                                    </p> <!-- /.section-paragraph -->
-                                    <p class="section-paragraph wow pulse animated">
-                                        ▷ Disadvantages
+                                        <a onclick=myFunction('f')> ▷ Features</a>
+										<p class="section-paragraph wow pulse animated" id='f'>
+										❥ Payers are equal to buyers, and payees are equal to sellers.
+										</p>
+										<p class="section-paragraph wow pulse animated" id='f'>
+										❥ Transaction fees on one side.
+										</p>
+										<p class="section-paragraph wow pulse animated" id='f'>
+										❥ Pay at anytime when settings are done.
+										</p>
+                                    </p> <!-- /.section-paragraph -->									                                   
+                                    <p class="section-paragraph wow pulse animated">								
+                                       <a onclick=myFunction('f')> ▷ Disadvantages</a>
+									     <p class="section-paragraph wow pulse animated" id='f2'>
+										 ❥ Frozen account, money got hold.
+										 </p>
+										 <p class="section-paragraph wow pulse animated" id='f2'>
+										 ❥ Time consuming.
+										 </p>
+										 <p class="section-paragraph wow pulse animated" id='f2'>
+										 ❥ Account limitation.
+										 </p>
+										 <p class="section-paragraph wow pulse animated" id='f2'>
+										 ❥ Payment got hold for 21days for eBay sellers.
+										 </p>
+										 <p class="section-paragraph wow pulse animated" id='f2'>
+										 ❥ Administrative hold.
+										 </p>
                                     </p> <!-- /.section-paragraph -->
                                 </div> <!-- /.wrapper -->
                             </div> <!-- /.about-content -->
                         </div>
-                        <div class="col-md-8 col-sm-12 about-table-cell" style="background:url(images/part_3_bg.jpg);background-size:cover;">
+                         <div class="col-md-6 col-sm-12 about-table-cell">
+                            <div class="about-content">
+                                <div class="wrapper">
+                                    <h2 class="section-title wow bounceInRight animated custom-white">Features</h2>						 
+                                        <p class="section-paragraph wow pulse animated">
+									        <a onclick=myFunction('f')> ▷ Advantages</a>
+									        <p></p>
+									        <a onclick=myFunction('f2')> ○ Buyer</a>
+									        <p class="section-paragraph wow pulse animated" id='f2'>
+										    ❥ Set up is simple.
+										    </p>
+										    <p class="section-paragraph wow pulse animated" id='f2'>
+										    ❥ Faster than sending money orders or checks in the mail.
+										    </p>
+										    <p class="section-paragraph wow pulse animated" id='f2'>
+										    ❥ Keep financial information privately. 
+										    </p>
+										    <p class="section-paragraph wow pulse animated" id='f2'>
+										    ❥ Accept by merchants worldwide.
+										    </p>
+										    <a onclick=myFunction('f2')> ○ Seller</a>
+									        <p class="section-paragraph wow pulse animated" id='f2'>
+										    ❥ Only pay transaction fees when receive payments.
+										    </p>
+										    <p class="section-paragraph wow pulse animated" id='f2'>
+										    ❥ Payments are deposited to PayPal account instantly.
+										    </p>
+										    <p class="section-paragraph wow pulse animated" id='f2'>
+										    ❥ Measure and manage business easily.
+										    </p>
+										    <p class="section-paragraph wow pulse animated" id='f2'>
+										    ❥ Keep fraudulent buyers out of the PayPal network.
+										    </p>
+                                       </p> <!-- /.section-paragraph -->
+                                </div> <!-- /.wrapper -->
+                            </div> <!-- /.about-content -->
+                        </div>
                         </div>
                     </div> <!-- /.about-table -->
                 </div> <!-- /.row -->
@@ -231,7 +297,7 @@
     
     <!--== 7. Our Works ==-->
 
-        <section id="current" class="works">
+        <section id="history" class="works">
             <div class="wrapper">
                 <div class="container">
                 <h2 class="section-title wow bounceInRight animated custom-white">PayPal History</h2>
@@ -331,47 +397,47 @@
                     <h2 class="section-title block-title wow animated bounceInRight animated custom-black">future</h2>
                     <div class="row">
                         <div class="col-sm-4">
-                            <div class="meet-item-bg meet wow pulse animated text-center">
-                                <div class="meet-item text-center">
-                                    <div class="meet-single-item wow bounceInDown animated">
-                                       <!-- <img src="images/m_01.jpg" alt="Meet">-->
+                            <div class="future-item-bg future wow pulse animated text-center">
+                                <div class="future-item text-center">
+                                    <div class="future-single-item wow bounceInDown animated">
+                                        <img src="images/f_01.jpg" alt="future">
                                     </div> <!-- /.meet-single-item -->
-                                    <div class="meet-item-content custom-white wow bounceInUp animated">
-                                        <h6 class="meet-item-name">future point one</h6>
-                                        <p class="meet-item-sub custom-black">paypal</p>
-                                        <p class="meet-item-about">
-                                            type here
+                                    <div class="future-item-content custom-white wow bounceInUp animated">
+                                        <h6 class="future-item-name">Point One</h6>
+                                        <p class="future-item-sub custom-black">QR Code</p>
+                                        <p class="future-item-about">
+                                            PayPal Pay
                                         </p>
                                     </div> <!-- /.meet-item-content -->
                                 </div> <!-- /.meet-item -->
                             </div> <!-- /.meet-item-bg -->
                         </div> <!-- /.col-sm-4 -->
                         <div class="col-sm-4">
-                            <div class="meet-item-bg meet wow pulse animated text-center">
-                                <div class="meet-item text-center">
-                                    <div class="meet-single-item wow bounceInDown animated">
-                                     <!--   <img src="images/m_02.jpg" alt="Meet">-->
+                            <div class="future-item-bg future wow pulse animated text-center">
+                                <div class="future-item text-center">
+                                    <div class="future-single-item wow bounceInDown animated">
+                                        <img src="images/f_02.jpg" alt="future">
                                     </div> <!-- /.meet-single-item -->
-                                    <div class="meet-item-content custom-white wow bounceInUp animated">
-                                        <h6 class="meet-item-name">future point two</h6>
-                                        <p class="meet-item-sub custom-black">paypal</p>
-                                        <p class="meet-item-about">
-                                            type here
+                                    <div class="future-item-content custom-white wow bounceInUp animated">
+                                        <h6 class="future-item-name">Point Two</h6>
+                                        <p class="future-item-sub custom-black">paypal</p>
+                                        <p class="future-item-about">
+                                            BitCoin Collaboration
                                         </p>
                                     </div> <!-- /.meet-item-content -->
                                 </div> <!-- /.meet-item -->
                             </div> <!-- /.meet-item-bg -->
                         </div> <!-- /.col-sm-4 -->
                         <div class="col-sm-4">
-                            <div class="meet-item-bg meet wow pulse animated text-center">
-                                <div class="meet-item text-center">
-                                    <div class="meet-single-item wow bounceInDown animated">
-                                   <!-- <img src="images/m_03.jpg" alt="Meet">-->
+                            <div class="future-item-bg future wow pulse animated text-center">
+                                <div class="future-item text-center">
+                                    <div class="future-single-item wow bounceInDown animated">
+                                    <img src="images/f_03.jpg" alt="Meet">
                                     </div> <!-- /.meet-single-item -->
-                                    <div class="meet-item-content custom-white wow bounceInUp animated">
-                                        <h6 class="meet-item-name">future point three</h6>
-                                        <p class="meet-item-sub custom-black">paypal</p>
-                                        <p class="meet-item-about">
+                                    <div class="future-item-content custom-white wow bounceInUp animated">
+                                        <h6 class="future-item-name">Point Three</h6>
+                                        <p class="future-item-sub custom-black">paypal</p>
+                                        <p class="future-item-about">
                                             type here
                                         </p>
                                     </div> <!-- /.meet-item-content -->
@@ -396,7 +462,7 @@
                                     IT 646 <br>
                                     <strong>E-mail: </strong>rayb@gbc.edu <br>
                                     <strong>E-mail: </strong>swu@gbc.edu <br>
-                                    <strong>E-mail: </strong>example@gbc.edu <br>
+                                    <strong>E-mail: </strong>jayaprm@gbc.edu <br>
                                     <strong>Project: </strong><a href="#">www.paypal.com</a>
                                 </p>
                                 <ul class="social-icons text-center">
@@ -429,7 +495,7 @@
                                         <input type="email" class="form-control custom-form-control wow bounceInRight animated" id="email" name="email" placeholder="enter email" required>
                                     </div>
                                     <div class="form-group custom-form-group col-sm-12">
-                                        <label class="sr-only" for="text-massage"><span class="required">*</span>留言</label>
+                                        <label class="sr-only" for="text-massage"><span class="required">*</span>Comment</label>
                                         <textarea  class="form-control custom-form-control wow bounceInUp animated" id="text-massage" name="text-massage" rows="3" placeholder="message here" required></textarea>
                                     </div>
 
